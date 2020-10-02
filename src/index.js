@@ -1,9 +1,9 @@
 
 exports.min = function min(array) {
     let objIsArray = Array.isArray(array);
-    if (objIsArray == false || undefined){
+    if (objIsArray === false || undefined){
         return 0;
-    } else if  (array.length == 0) {
+    } else if  (array.length === 0) {
         return 0;
     } else {
         return Math.min.apply( Math, array );
@@ -12,9 +12,9 @@ exports.min = function min(array) {
 
 exports.max = function max(array) {
     let objIsArray = Array.isArray(array);
-    if (objIsArray == false || undefined){
+    if (objIsArray === false || undefined){
         return 0;
-    } else if  (array.length == 0) 
+    } else if  (array.length === 0) 
     {
         return 0;
     } else {
@@ -24,9 +24,9 @@ exports.max = function max(array) {
 
 exports.avg = function avg(array) {
     let objIsArray = Array.isArray(array);
-    if (objIsArray == false || undefined){
+    if (objIsArray === false || undefined){
         return 0;
-    } else if  (array.length == 0) 
+    } else if  (array.length === 0) 
     {
         return 0;
     } else{
