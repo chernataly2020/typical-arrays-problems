@@ -1,6 +1,6 @@
 
 exports.min = function min (array) {
-    let objIsArray = Array.isarray(array);
+    let objIsArray = Array.isArray(array);
     if (array.length == 0 || objIsArray == false) {
         return 0;
     }
@@ -10,6 +10,7 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
+    let objIsArray = Array.isArray(array);
     if (array.length == 0 || objIsArray == false) {
         return 0;
     }
@@ -19,6 +20,7 @@ exports.max = function max (array) {
 }
 
 exports.avg = function avg (array) {
+  let objIsArray = Array.isArray(array);
   if (array.length == 0 || objIsArray == false) {
         return 0;
     }
