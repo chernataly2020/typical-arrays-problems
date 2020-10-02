@@ -1,10 +1,10 @@
 
 exports.min = function min(array) {
     let objIsArray = Array.isArray(array);
-    if (array.length == 0 || objIsArray == false || undefined) {
+    if (objIsArray == false || undefined || array.length == 0) {
         return 0;
     } else {
-        return Math.min.apply( Math, array );
+        return Math.min.apply( Math, ...array );
     }
 }
 
@@ -13,7 +13,7 @@ exports.max = function max(array) {
     if (objIsArray == false || undefined || array.length == 0) {
         return 0;
     } else {
-        return Math.max.apply( Math, array );
+        return Math.max.apply( Math, ...array );
     }
 }
 
