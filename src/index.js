@@ -26,7 +26,7 @@ exports.avg = function avg (array) {
     }
     else {
       let sum=0;
-      for(int i=1;i<array.length;i++){
+      for(let i=1;i<array.length;i++){
         sum  += array[i];
         }
       return sum / array.length;
